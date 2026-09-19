@@ -1,32 +1,37 @@
-# React + TypeScript + Vite
+# vpc-front
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **VPC — Virtual Private Collection**
+> A personal digital collection. For our eyes only.
 
-Currently, two official plugins are available:
+Frontend module of the **VPC** project. Built for personal use — no strangers,
+no third parties, no data leaks. Just a fast, good-looking, fully localized
+interface with proper animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What is this
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+VPC is your private collection on the web. Everything under your control,
+nothing on someone else's server, nothing touched by foreign hands.
+`vpc-front` is the face of the project — what you see, what you use,
+what looks the way it should.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+Chosen to write **fast**, look **clean**, and avoid reinventing wheels.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+| Layer          | Technology                        | Why                                              |
+|----------------|-----------------------------------|--------------------------------------------------|
+| Bundler        | **Vite**                          | Instant dev server, fast production builds       |
+| Language       | **TypeScript**                    | Fewer bugs, better editor support                |
+| UI Framework   | **React 19**                      | Component model, huge ecosystem                  |
+| Styling        | **Tailwind CSS v4**               | Utility-first, zero config, CSS-driven theme     |
+| Animations     | **motion** (Framer Motion)        | Smooth transitions, gestures, layout animations  |
+| Localization   | **i18next + react-i18next**       | Multi-language with browser detection            |
+| Icons          | **lucide-react**                  | Clean, consistent icon set                       |
+| Routing        | **react-router-dom**              | *Planned* — pages and navigation                 |
+| UI Components  | **shadcn/ui**                     | *Planned* — ready-made accessible components     |
+
+---

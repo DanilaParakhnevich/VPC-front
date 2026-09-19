@@ -1,0 +1,20 @@
+{
+  "login": {
+    "title": "Welcome to VPC",
+    "subtitle": "Virtual Private Collection",
+    "email": "Email",
+    "emailPlaceholder": "you@vpc.local",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "submit": "Sign in",
+    "submitting": "Signing in...",
+    "footer": "For our eyes only.",
+    "errorRequired": "Fill in both fields"
+  },
+  "common": {
+    "langRu": "RU",
+    "langEn": "EN"
+  }
+}
